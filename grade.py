@@ -1,10 +1,10 @@
 import webbrowser
 import json
+import sys
 
+submission = json.load(sys.stdin);
 
-submission = json.load();
-
-print submission["Name"], "'s Submission "
-webbrowser.open_new_tab(submission["GitHub URL"])
-webbrowser.open_new_tab(submission["Travis CI URL"])
+print submission["Project #1"]["Name"], "'s Submission "
+webbrowser.open_new_tab(submission["Project #1"]["GitHub URL"])
+webbrowser.open_new_tab(submission["Project #1"]["Travis CI URL"])
 
