@@ -7,7 +7,7 @@ directory = "./submissions";
 project_num = "Project #4";
 your_hackerrank = "tiramisueanne";
 hackerrank_url = "https://www.hackerrank.com/contests/cs371p-spring-2018-darwin/compare/" + your_hackerrank + "/";
-for file in os.listdir(directory):
+for file in sorted(os.listdir(directory)):
     filename = directory + "/"+ file;
     open_file = open(filename);
     if filename.endswith(".json"):
